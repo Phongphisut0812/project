@@ -1,0 +1,54 @@
+@font-face {
+  font-family: SubjectRounded-Regular;
+  src: url('../fonts/subject/SubjectRounded-Regular.ttf'); 
+}
+@font-face {
+  font-family: SubjectRounded-Bold;
+  src: url('../fonts/subject/SubjectRounded-Bold.ttf'); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+img.img-logo{ 
+  width: 250px;
+  height: auto;
+  position: fixed;  /*------ปรับภาพให้ชัดขึ้น------**/
+} 
+nav{
+  height: 70px;
+}
+
+body{
+  height: 100vh;
+  font-family: SubjectRounded-Regular, sans-serif;
+}
+
+button.btn-home{
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  background: #D9D9D9 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 4px #85858529;
+  border-radius: 6px;
+  opacity: 1;
+  height: 35px;
+  width: 75px;
+  text-align: center;
+
+}
+button.btn-login{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  background: #55C8E3 0% 0% no-repeat padding-box;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px #85858529;
+  border-radius: 6px;
+  opacity: 1;
+  height: 35px;
+  width: 75px;
+  text-align: center;
+
+}

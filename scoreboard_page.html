@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Employee</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="icon" type="image/png" href="assets/img/em-logo.png" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+   
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main_page.css" rel="stylesheet" />
+    
+</head>
+
+    <body>
+        <header>
+	        <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <!-- Navbar brand -->
+                    <a class="navbar-brand me-2">
+                        <img
+                            src="/assets/img/logo.png"
+                            class="img-logo"
+                            alt="EM LOGO"
+                            loading="lazy"
+                            style="margin-top: -1px;"
+                        />
+                        </a>
+
+                    <div class="d-flex align-items-center">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="ค้นหาชื่อ..." style="font-size: 14px;">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="d-flex align-items-center">	  
+                            <div class="container notification">
+                                <img  src="/assets/img/bell-icon.png" height="50" width="50" alt="">
+                            </div> 
+
+                            <div class="container user">
+                                <img src="/assets/img/user-icon.png" height="50" width="50" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                </div>    
+            </nav>
+        </header>
+
+
+	    <nav class="navbar navbar-page navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <ul class="navbar-nav  mb-sm-0">
+                    <li class="nav-item nav-item-font">
+                        <a class="nav-link active me-5" aria-current="page" href="/main_page.html" style="color: #FFFFFF;">หน้าหลัก</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/activity_page.html" style="color: #FFFFFF;">กิจกรรม</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/score_page.html" style="color: #FFFFFF;">ให้คะแนน</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/points_page.html" style="color: #FFFFFF;">คะแนนสะสม</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/scoreboard_page.html" style="color: #FFFFFF;">Scoreboard</a>
+                    </li>
+                </ul>
+            </div>
+	    </nav>
+
+        <div>
+        <canvas id="radarChart"></canvas>
+        </div>
+
+
+        <div class="comment-box">
+            <textarea rows="3" placeholder="แสดงความคิดเห็น"></textarea>
+            
+        </div>
+        <button class="btn submit-button" type="submit">บันทึก</button>
+    </div>
+
+
+        <script src="/assets/js/scoreboard_page.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+</html>

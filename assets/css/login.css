@@ -1,0 +1,40 @@
+@font-face {
+  font-family: SubjectRounded-Regular;
+  src: url('../fonts/subject/SubjectRounded-Regular.ttf'); 
+}
+@font-face {
+  font-family: SubjectRounded-Bold;
+  src: url('../fonts/subject/SubjectRounded-Bold.ttf'); 
+}
+  
+html, body {
+  font-family: SubjectRounded-Regular;
+  height: 100%;
+  /*background: #007bff;*/
+  /*background: linear-gradient(to right, #0062E6, #33AEFF);*/
+}
+
+body{
+  padding-top: 5rem;
+  background: url('/assets/img/bg02.jpg');
+  background-size: cover;
+  
+}
+.form-login{
+  max-width: 20rem;
+  margin: auto;
+  
+}
+.form-email{
+  height: 50px;
+}
+.btn-signin {
+  font-family: SubjectRounded-Regular;
+  font-size: 18px;
+  background: linear-gradient(to right, #85d2e4, #55C8E3);
+  color: aliceblue;
+  width: 300px;
+  box-shadow: 0px 2px 4px #85858529;
+  border-radius: 6px;
+  opacity: 1;
+}

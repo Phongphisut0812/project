@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Employee</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="icon" type="image/png" href="assets/img/em-logo.png" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+   
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/points_page.css" rel="stylesheet" />
+    
+</head>
+
+    <body>
+        <header>
+	        <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <!-- Navbar brand -->
+                    <a class="navbar-brand me-2">
+                        <img
+                            src="/assets/img/logo.png"
+                            class="img-logo"
+                            alt="EM LOGO"
+                            loading="lazy"
+                            style="margin-top: -1px;"
+                        />
+                        </a>
+
+                    <div class="d-flex align-items-center">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="ค้นหาชื่อ..." style="font-size: 14px;">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="d-flex align-items-center">	  
+                            <div class="container notification">
+                                <img  src="/assets/img/bell-icon.png" height="50" width="50" alt="">
+                            </div> 
+
+                            <div class="container user">
+                                <img src="/assets/img/user-icon.png" height="50" width="50" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                </div>    
+            </nav>
+        </header>
+
+
+	    <nav class="navbar navbar-page navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <ul class="navbar-nav  mb-sm-0">
+                    <li class="nav-item nav-item-font">
+                        <a class="nav-link active me-5" aria-current="page" href="/main_page.html" style="color: #FFFFFF;">หน้าหลัก</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/activity_page.html" style="color: #FFFFFF;">กิจกรรม</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/score_page.html" style="color: #FFFFFF;">ให้คะแนน</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/points_page.html" style="color: #FFFFFF;">คะแนนสะสม</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="/scoreboard_page.html" style="color: #FFFFFF;">Scoreboard</a>
+                    </li>
+                </ul>
+            </div>
+	    </nav>
+
+        <section class="main-content">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card bg-white p-3 mb-4 shadow uer-point_num1">
+                    <div class="d-flex justify-content-between mb-4">
+                        <div class="user-info">
+                            <div class="user-info__basic">
+                                <p class="mb-2 name">1. สิริพิม หมอดู</p>
+                                <p class="text-muted mb-0">นักศึกษา</p>
+                            </div>
+                            <div class="user-info__img">
+                                <img src="/assets/img/user-icon.png" alt="User Img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info__basic mb-4">
+                        <img src="/assets/img/star.png" style="width: 5%;">
+                            <small class="ml-1">31</small>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mt-4 consult">
+                        <div>
+                            <p class="mb-0">ให้คำปรึกษาเรื่องงาน</p>
+                        </div>
+                        <span class="text-dark">6</span>
+                        <img  class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+                    <div class="d-flex justify-content-between mt-4 help">
+                        <div>
+                            <p class="mb-0">ช่วยเหลือซึ่งกันและกัน</p>
+                        </div>
+                        <span class="text-dark">8</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 generous">
+                        <div>
+                            <p class="mb-0">มีน้ำใจกับผู้อื่น</p>
+                        </div>
+                        <span class="text-dark ">5</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 relationship">
+                        <div>
+                            <p class="mb-0">มีมนุษย์สัมพันธ์ที่ดี</p>
+                        </div>
+                        <span class="text-dark" style="text-align: center;">7</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 volunteer">
+                        <div>
+                            <p class="mb-0">มีจิตอาสา</p>
+                        </div>
+                        <span class="text-dark col-4" style="text-align: center;">5</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card bg-white p-3 mb-4 shadow uer-point_num2">
+                   
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="user-info">
+                                <div class="user-info__basic">
+                                    <p class="mb-2 name">2. พงศ์พิสุทธิ์ ผากา</p>
+                                    <p class="text-muted mb-0">นักศึกษา</p>
+                                </div>
+                                <div class="user-info__img">
+                                    <img src="/assets/img/user-icon.png" alt="User Img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-info__basic mb-4">
+                            <img src="/assets/img/star.png" style="width: 5%;">
+                                <small class="ml-1">15</small>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-4 consult">
+                            <div>
+                                <p class="mb-0">ให้คำปรึกษาเรื่องงาน</p>
+                            </div>
+                            <span class="text-dark">3</span>
+                            <img  class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                        </div>
+                        <div class="d-flex justify-content-between mt-4 help">
+                            <div>
+                                <p class="mb-0">ช่วยเหลือซึ่งกันและกัน</p>
+                            </div>
+                            <span class="text-dark">4</span>
+                            <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                        </div>
+    
+                        <div class="d-flex justify-content-between mt-4 generous">
+                            <div>
+                                <p class="mb-0">มีน้ำใจกับผู้อื่น</p>
+                            </div>
+                            <span class="text-dark ">2</span>
+                            <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                        </div>
+    
+                        <div class="d-flex justify-content-between mt-4 relationship">
+                            <div>
+                                <p class="mb-0">มีมนุษย์สัมพันธ์ที่ดี</p>
+                            </div>
+                            <span class="text-dark" style="text-align: center;">1</span>
+                            <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                        </div>
+    
+                        <div class="d-flex justify-content-between mt-4 volunteer">
+                            <div>
+                                <p class="mb-0">มีจิตอาสา</p>
+                            </div>
+                            <span class="text-dark col-4" style="text-align: center;">5</span>
+                            <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                        </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card bg-white p-3 mb-4 shadow uer-point_num2">
+                    <div class="d-flex justify-content-between mb-2">
+                        <div class="user-info">
+                            <div class="user-info__basic">
+                                <p class="mb-2 name">3. สุนันทนา สร้อยทอง</p>
+                                <p class="text-muted mb-0">นักศึกษา</p>
+                            </div>
+                            <div class="user-info__img">
+                                <img src="/assets/img/user-icon.png" alt="User Img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info__basic mb-4">
+                        <img src="/assets/img/star.png" style="width: 5%;">
+                            <small class="ml-1">10</small>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mt-4 consult">
+                        <div>
+                            <p class="mb-0">ให้คำปรึกษาเรื่องงาน</p>
+                        </div>
+                        <span class="text-dark">1</span>
+                        <img  class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+                    <div class="d-flex justify-content-between mt-4 help">
+                        <div>
+                            <p class="mb-0">ช่วยเหลือซึ่งกันและกัน</p>
+                        </div>
+                        <span class="text-dark">4</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 generous">
+                        <div>
+                            <p class="mb-0">มีน้ำใจกับผู้อื่น</p>
+                        </div>
+                        <span class="text-dark ">2</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 relationship">
+                        <div>
+                            <p class="mb-0">มีมนุษย์สัมพันธ์ที่ดี</p>
+                        </div>
+                        <span class="text-dark" style="text-align: center;">1</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 volunteer">
+                        <div>
+                            <p class="mb-0">มีจิตอาสา</p>
+                        </div>
+                        <span class="text-dark col-4" style="text-align: center;">2</span>
+                        <img class="user-img_iconstar" src="/assets/img/star.png" style="width: 5%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row row-menu_point">
+            <div class="col-xxl-12  mb-2">
+              <div class="card body-menu_point">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between p-md-1 ">
+                    <div class="d-flex flex-row ">
+                      <div class="align-self-center col-6 ">
+                        <p>ลำดับ</p>
+                      </div>
+                      <div class="align-self-center col-12">
+                        <p>ชื่อ-นามสกุล</p>
+                      </div>
+                    </div>
+                    <div class="align-self-center ">
+                        <p>ให้คำปรึกษาเรื่องงาน</p>
+                    </div>
+                    <div class="align-self-center ">
+                        <p>ช่วยเหลือซึ่งกันและกัน</p>
+                    </div>
+                    <div class="align-self-center ">
+                        <p>มีน้ำใจกับผู้อื่น</p>
+                    </div>
+                    <div class="align-self-center ">
+                      <p>มีมนุษย์สัมพันธ์ที่ดี</p>
+                    </div>
+                    <div class="align-self-center ">
+                      <p>มีจิตอาสา</p>
+                    </div>
+                    <div class="align-self-center ">
+                      <p>คะแนนสะสม</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+       
+
+          
+       
+
+      
+
+
+
+
+
+
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+</html>
